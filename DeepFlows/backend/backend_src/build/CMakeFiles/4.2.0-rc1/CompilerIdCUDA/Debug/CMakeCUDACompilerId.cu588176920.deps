@@ -1,0 +1,44 @@
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_malloc.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memory.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_search.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wtime.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\math.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\time.h
+D:\cuda_tools\include\builtin_types.h
+D:\cuda_tools\include\channel_descriptor.h
+D:\cuda_tools\include\crt\common_functions.h
+D:\cuda_tools\include\crt\host_config.h
+D:\cuda_tools\include\crt\host_defines.h
+D:\cuda_tools\include\crt\math_functions.h
+D:\cuda_tools\include\cuda_device_runtime_api.h
+D:\cuda_tools\include\cuda_runtime.h
+D:\cuda_tools\include\cuda_runtime_api.h
+D:\cuda_tools\include\device_types.h
+D:\cuda_tools\include\driver_functions.h
+D:\cuda_tools\include\driver_types.h
+D:\cuda_tools\include\library_types.h
+D:\cuda_tools\include\surface_types.h
+D:\cuda_tools\include\texture_types.h
+D:\cuda_tools\include\vector_functions.h
+D:\cuda_tools\include\vector_functions.hpp
+D:\cuda_tools\include\vector_types.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\cmath
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\limits.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\sal.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\yvals.h
+D:\VS2019\VC\Tools\MSVC\14.29.30133\include\yvals_core.h

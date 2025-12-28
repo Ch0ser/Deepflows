@@ -1,0 +1,13 @@
+numpy
+grpcio
+grpcio-tools
+seaborn
+scikit-learn
+onnxruntime-gpu
+matplotlib-inline
+ipython
+psutil
+pybind11
+typing_extensions
+dill
+nvidia-ml-py

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\85d464081d288c4448ae2a7c43b9a959\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BA121465-BE11-365F-B96D-401A3B1E3034}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

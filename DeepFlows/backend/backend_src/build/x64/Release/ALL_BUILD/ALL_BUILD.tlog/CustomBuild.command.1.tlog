@@ -1,0 +1,10 @@
+^D:\PYTHON\PYCHARM\PYCHARM COMMUNITY EDITION 2024.2\CODE\DF\DEEPFLOWS\BACKEND\BACKEND_SRC\CMAKELISTS.TXT
+setlocal
+D:\Cmake\bin\cmake.exe "-SD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src" "-BD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build" --check-stamp-file "D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

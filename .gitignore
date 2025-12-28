@@ -1,0 +1,13 @@
+# 环境文件
+.venv/
+.vscode/
+# 临时缓存
+DeepFlows/**/__pycache__/
+DeepFlows/**/*.pyc
+test/__pycache__
+.trae/
+# 测试检查点
+test/checkpoints/
+# 大型数据解压后的文件夹屏蔽
+data/Animal/
+data/dishes/

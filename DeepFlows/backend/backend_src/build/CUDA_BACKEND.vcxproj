@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B72EB165-4151-3F12-9011-9A71CDD6D302}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>CUDA_BACKEND</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.5.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CUDA_BACKEND.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CUDA_BACKEND</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CUDA_BACKEND.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CUDA_BACKEND</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CUDA_BACKEND.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CUDA_BACKEND</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CUDA_BACKEND.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CUDA_BACKEND</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="Debug";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>CUDA_BACKEND.dir\Debug</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;CMAKE_INTDIR=\"Debug\";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;PYBIND11_NO_STD_PAIR;Py_NO_LINK_LIB;CMAKE_INTDIR="Debug";CUDA_BACKEND_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) --generate-code=arch=compute_52,code=[compute_52,sm_52] -arch=sm_52 -std=c++14 --expt-relaxed-constexpr -Xcompiler="/EHsc -Ob0 -Zi /EHsc,/utf-8"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>Od</Optimization>
+      <Runtime>MDd</Runtime>
+      <RuntimeChecks>RTC1</RuntimeChecks>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Anaconda3\envs\pytorch\libs\python310.lib;D:\Anaconda3\envs\pytorch\Lib\x64\cudart.lib;D:\Anaconda3\envs\pytorch\libs\python310.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/Debug/CUDA_BACKEND.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/Debug/CUDA_BACKEND.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="Release";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>CUDA_BACKEND.dir\Release</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CMAKE_INTDIR=\"Release\";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;PYBIND11_NO_STD_PAIR;Py_NO_LINK_LIB;CMAKE_INTDIR="Release";CUDA_BACKEND_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) --generate-code=arch=compute_52,code=[compute_52,sm_52] -arch=sm_52 -std=c++14 --expt-relaxed-constexpr -Xcompiler="/EHsc -Ob2 /EHsc,/utf-8"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Anaconda3\envs\pytorch\libs\python310.lib;D:\Anaconda3\envs\pytorch\Lib\x64\cudart.lib;D:\Anaconda3\envs\pytorch\libs\python310.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/Release/CUDA_BACKEND.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/Release/CUDA_BACKEND.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="MinSizeRel";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>CUDA_BACKEND.dir\MinSizeRel</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CMAKE_INTDIR=\"MinSizeRel\";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;PYBIND11_NO_STD_PAIR;Py_NO_LINK_LIB;CMAKE_INTDIR="MinSizeRel";CUDA_BACKEND_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) --generate-code=arch=compute_52,code=[compute_52,sm_52] -arch=sm_52 -std=c++14 --expt-relaxed-constexpr -Xcompiler="/EHsc -Ob1 /EHsc,/utf-8"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O1</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Anaconda3\envs\pytorch\libs\python310.lib;D:\Anaconda3\envs\pytorch\Lib\x64\cudart.lib;D:\Anaconda3\envs\pytorch\libs\python310.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/MinSizeRel/CUDA_BACKEND.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/MinSizeRel/CUDA_BACKEND.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="RelWithDebInfo";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>CUDA_BACKEND.dir\RelWithDebInfo</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";CUDA_BACKEND_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;PYBIND11_NO_STD_PAIR;Py_NO_LINK_LIB;CMAKE_INTDIR="RelWithDebInfo";CUDA_BACKEND_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) --generate-code=arch=compute_52,code=[compute_52,sm_52] -arch=sm_52 -std=c++14 --expt-relaxed-constexpr -Xcompiler="/EHsc -Ob1 -Zi /EHsc,/utf-8"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pytorch\Include;D:\Anaconda3\envs\pytorch\Library\include;D:\cuda_tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Anaconda3\envs\pytorch\libs\python310.lib;D:\Anaconda3\envs\pytorch\Lib\x64\cudart.lib;D:\Anaconda3\envs\pytorch\libs\python310.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/RelWithDebInfo/CUDA_BACKEND.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/RelWithDebInfo/CUDA_BACKEND.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src" "-BD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build" --check-stamp-file "D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Common.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Config.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11ConfigVersion.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11NewTools.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Targets.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompilerABI.cu;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDAInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-4.2\Modules\FindCUDAToolkit.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython3.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesAll.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesNative.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesValidate.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAFilterImplicitLibs.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDALinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCUDALinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCFilterImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCParseImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCUDACompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src" "-BD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build" --check-stamp-file "D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Common.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Config.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11ConfigVersion.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11NewTools.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Targets.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompilerABI.cu;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDAInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-4.2\Modules\FindCUDAToolkit.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython3.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesAll.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesNative.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesValidate.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAFilterImplicitLibs.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDALinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCUDALinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCFilterImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCParseImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCUDACompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src" "-BD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build" --check-stamp-file "D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Common.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Config.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11ConfigVersion.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11NewTools.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Targets.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompilerABI.cu;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDAInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-4.2\Modules\FindCUDAToolkit.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython3.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesAll.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesNative.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesValidate.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAFilterImplicitLibs.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDALinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCUDALinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCFilterImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCParseImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCUDACompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src" "-BD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build" --check-stamp-file "D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Common.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Config.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11ConfigVersion.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11NewTools.cmake;D:\Anaconda3\envs\pytorch\Library\share\cmake\pybind11\pybind11Targets.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDACompilerABI.cu;D:\Cmake\share\cmake-4.2\Modules\CMakeCUDAInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCUDACompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-4.2\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\NVIDIA.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-4.2\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-4.2\Modules\FindCUDAToolkit.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-4.2\Modules\FindPython3.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesAll.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesNative.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAArchitecturesValidate.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDAFilterImplicitLibs.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCUDALinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCUDALinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCFilterImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CMakeNVCCParseImplicitInfo.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckCompilerFlag.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\Cmake\share\cmake-4.2\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCUDACompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\ndarray_backend_cuda.cu" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\python\pycharm\PyCharm Community Edition 2024.2\code\DF\DeepFlows\backend\backend_src\build\ZERO_CHECK.vcxproj">
+      <Project>{4C39D67E-B292-353D-B9E5-5D0F54CEEC1D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.5.targets" />
+  </ImportGroup>
+</Project>

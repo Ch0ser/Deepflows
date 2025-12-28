@@ -1,0 +1,10 @@
+^D:\PYTHON\PYCHARM\PYCHARM COMMUNITY EDITION 2024.2\CODE\DF\DEEPFLOWS\BACKEND\BACKEND_SRC\BUILD\CMAKEFILES\85D464081D288C4448AE2A7C43B9A959\GENERATE.STAMP.RULE
+setlocal
+D:\Cmake\bin\cmake.exe "-SD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src" "-BD:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/python/pycharm/PyCharm Community Edition 2024.2/code/DF/DeepFlows/backend/backend_src/build/CUDA_BACKEND.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
