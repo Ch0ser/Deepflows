@@ -239,8 +239,11 @@ A: Check if the backend `server.py` is running and port `8000` is not blocked by
    <img src="https://github.com/xwh12345-user.png" width="60px;" alt="xwh12345-user"/>
  </a>
  <a href="https://github.com/RegentZai">
-   <img src="https://github.com/RegentZai.png" width="60px;" alt="RegentZai"/>
- </a>
+    <img src="https://github.com/RegentZai.png" width="60px;" alt="RegentZai"/>
+  </a>
+  <a href="https://github.com/Lymtics-Aa">
+    <img src="https://github.com/Lymtics-Aa.png" width="60px;" alt="Lymtics-Aa"/>
+  </a>
 
 ## Contribution and Contact
 
