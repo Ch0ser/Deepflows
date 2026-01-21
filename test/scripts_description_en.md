@@ -38,5 +38,8 @@ This document provides a brief overview of the scripts located in the `test` dir
 ### MobileNet
 - [MobileNet.py](MobileNet.py): Implementation of MobileNetV1 architecture (Depthwise Separable Convolutions).
 
+## Pretrained Models & Transfer Learning
+- [test_pretrained_models.py](test_pretrained_models.py): Tests the functionality of downloading, converting, and loading pretrained models. Demonstrates how to use the `DeepFlows.utils.pretrained_models` module for transfer learning.
+
 ---
 *Note: Scripts with `_cuda` suffix require a GPU and the DeepFlows CUDA backend to be properly built and configured.*

@@ -38,5 +38,8 @@
 ### MobileNet
 - [MobileNet.py](MobileNet.py): MobileNetV1 架构（深度可分离卷积）的实现。
 
+## 预训练模型与迁移学习
+- [test_pretrained_models.py](test_pretrained_models.py): 测试预训练模型的下载、转换和加载功能。展示了如何使用 `DeepFlows.utils.pretrained_models` 模块进行迁移学习。
+
 ---
 *注意：带有 `_cuda` 后缀的脚本需要 GPU 以及正确构建和配置 DeepFlows CUDA 后端。*

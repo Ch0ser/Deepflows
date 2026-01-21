@@ -23,16 +23,21 @@ DeepFlows 是一个轻量级的深度学习框架教学/实验项目，包含张
   - MNIST：将原始 IDX 文件已位于 `Deepflows\data\MNIST\raw`（含 `train-images-idx3-ubyte`、`train-labels-idx1-ubyte`、`t10k-images-idx3-ubyte`、`t10k-labels-idx1-ubyte`）。
   - CIFAR-10：将 Python 版批次数据已位于 `Deepflows\data\cifar-10-batches-py`（含 `data_batch_1..5`、`test_batch`）。
 
-- 运行示例脚本（CPU）
-  - 线性回归：`python test/LinearRegression.py`
-  - MLP-MNIST：`python test/MLP_MNIST.py`
-  - CNN-MNIST（CPU）：`python test/CNN_MNIST.py`
-  - CNN-CIFAR10（CPU）：`python test/CNN_CIFAR10.py`
-
-- 运行示例脚本（CUDA，需要后端已启用）
-  - MLP-MNIST（CUDA）：`python test/MLP_MNIST_cuda.py`
-  - CNN-MNIST（CUDA）：`python test/CNN_MNIST_cuda.py`
-  - CNN-CIFAR10（CUDA）：`python test/CNN_CIFAR10_cuda.py`
+- 运行示例脚本 (详细说明请见 [test/scripts_description_cn.md](test/scripts_description_cn.md))
+  - **基础与 MLP**
+    - 线性回归 (CPU)：`python test/LinearRegression.py`
+    - MLP-MNIST (CPU/CUDA)：`python test/MLP_MNIST.py` / `python test/MLP_MNIST_cuda.py`
+  - **CNN (卷积神经网络)**
+    - MNIST (CPU/CUDA)：`python test/CNN_MNIST.py` / `python test/CNN_MNIST_cuda.py`
+    - CIFAR-10 (CPU/CUDA)：`python test/CNN_CIFAR10.py` / `python test/CNN_CIFAR10_cuda.py`
+    - Animal-10 (CUDA)：`python test/CNN_Animal10_cuda.py`
+    - Dishes (CUDA)：`python test/CNN_Dishes_cuda.py`
+  - **高级架构 (ResNet/MobileNet)**
+    - ResNet (Animal-10/CIFAR-10, CUDA)：`python test/ResNet_Animal10_cuda.py`, `python test/ResNet_CIFAR10_cuda.py`
+    - MobileNet 实现：`test/MobileNet.py`
+  - **功能测试**
+    - CUDA 底层测试：`python test/test_cuda.py`
+    - 模型保存加载测试：`python test/CNN_CIFAR10_cuda_model_save_load_test.py`
 
 > 注意：CUDA 版脚本会显式使用 `device='cuda'`。若未启用 CUDA 后端，相关脚本将无法运行，请先完成后端编译或导入编译产物。
 
@@ -48,7 +53,34 @@ DeepFlows 是一个轻量级的深度学习框架教学/实验项目，包含张
 - 张量核心：`DeepFlows/tensor.py`
 - 自动求导：`DeepFlows/autograd.py`
 - 后端抽象：`DeepFlows/backend/backend_tensor.py`
-- 示例脚本：`test/CNN_MNIST.py`, `test/LinearRegression.py`
+- 示例脚本：`test/` 目录下包含多种网络架构（CNN, ResNet, MobileNet）与数据集（MNIST, CIFAR-10, Animal-10）的训练脚本。详见 [test/scripts_description_cn.md](test/scripts_description_cn.md)。
+
+## 预训练模型与迁移学习
+
+DeepFlows 支持加载常见视觉模型的预训练权重（源自 PyTorch），这为迁移学习提供了基础。相关核心实现位于 `DeepFlows/utils/pretrained_models.py`。
+
+### 主要功能
+1. **模型支持**: 目前支持 `resnet18`, `resnet50`, `mobilenet_v1`, `vgg16` 等模型。
+2. **权重转换**: 提供了从 PyTorch 权重格式到 DeepFlows 权重格式的自动转换工具。
+3. **自动管理**: 支持自动下载、缓存和加载预训练权重。
+
+### 快速上手
+可以通过以下方式快速创建一个加载了预训练权重的模型：
+
+```python
+from DeepFlows.utils.pretrained_models import create_model_with_pretrained_weights
+
+# 自动下载(如需)、转换并创建加载好权重的模型
+# 支持的模型名: 'resnet18', 'resnet50', 'mobilenet_v1', 'vgg16'
+model = create_model_with_pretrained_weights('resnet18')
+```
+
+或者运行测试脚本体验完整流程：
+```bash
+python test/test_pretrained_models.py
+```
+
+该脚本展示了如何列出可用模型、下载权重、转换格式以及加载到模型中的完整过程。
 
 ## 常见问题与假设
 
