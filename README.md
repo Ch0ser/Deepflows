@@ -244,6 +244,9 @@ A: 请检查后端 `server.py` 是否正在运行，且端口 `8000` 未被防�
   <a href="https://github.com/Lymtics-Aa">
     <img src="https://github.com/Lymtics-Aa.png" width="60px;" alt="Lymtics-Aa"/>
   </a>
+  <a href="https://github.com/feudalDragon">
+    <img src="https://github.com/feudalDragon.png" width="60px;" alt="feudalDragon"/>
+  </a>
 
 ## 贡献与联系
 

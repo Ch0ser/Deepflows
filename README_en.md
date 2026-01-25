@@ -244,6 +244,9 @@ A: Check if the backend `server.py` is running and port `8000` is not blocked by
   <a href="https://github.com/Lymtics-Aa">
     <img src="https://github.com/Lymtics-Aa.png" width="60px;" alt="Lymtics-Aa"/>
   </a>
+  <a href="https://github.com/feudalDragon">
+    <img src="https://github.com/feudalDragon.png" width="60px;" alt="feudalDragon"/>
+  </a>
 
 ## Contribution and Contact
 
