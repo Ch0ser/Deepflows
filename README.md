@@ -1,233 +1,233 @@
-# DeepFlows
+# <img src="DeepFlows_logo.png" height="45" align="center" /> DeepFlows
 
-[**English**](README_en.md) | [**简体中文**](README.md)
+[**简体中文**](README_cn.md) | [**English**](README.md)
 
-DeepFlows 是一个轻量级的深度学习框架教学/实验项目，包含张量封装、自动求导、后端抽象、常用神经网络模块与优化器，以及一些示例训练脚本与服务模块。
+DeepFlows is a lightweight deep learning framework for teaching and experimentation. It includes tensor encapsulation, automatic differentiation, backend abstraction, common neural network modules and optimizers, as well as some example training scripts and service modules.
 
-## 主要目录结构（简要）
+## Directory Structure (Brief)
 
 - `DeepFlows/`
-  - `tensor.py` — 张量与计算图核心实现，包含 `Tensor`、`Graph` 等。（参见 `DeepFlows/tensor.py`）
-  - `autograd.py` — 自动求导开关（`no_grad` / `enable_grad`）与上下文管理。（参见 `DeepFlows/autograd.py`）
-  - `backend/` — 后端抽象与 `BackendTensor`（CPU/CPU-Numpy/CUDA 协议），用于多后端兼容。（参见 `DeepFlows/backend/backend_tensor.py`）
-  - `nn/` — 神经网络模块与函数（包含 `Module` 基类、常用层、损失函数等）。核心 `Module` 实现位于 `nn/modules/module.py`（参见 `DeepFlows/nn/modules/module.py`）。
-  - `optim/` — 优化器（Adam/SGD/Adagrad/Adadelta 等）。
-  - `utils/` — 数据加载、评估与可视化工具。
-  - `dist/`、`MyDLFW_serving/` — 分布式与模型服务原型/示例。
+  - `tensor.py` — Core implementation of Tensor and Computation Graph. (See `DeepFlows/tensor.py`)
+  - `autograd.py` — Autograd switch (`no_grad` / `enable_grad`) and context management. (See `DeepFlows/autograd.py`)
+  - `backend/` — Backend abstraction and `BackendTensor` (CPU/CPU-Numpy/CUDA protocols) for multi-backend compatibility. (See `DeepFlows/backend/backend_tensor.py`)
+  - `nn/` — Neural network modules and functions (including `Module` base class, common layers, loss functions, etc.). Core `Module` implementation is in `nn/modules/module.py` (See `DeepFlows/nn/modules/module.py`).
+  - `optim/` — Optimizers (Adam/SGD/Adagrad/Adadelta, etc.).
+  - `utils/` — Data loading, evaluation, and visualization tools.
+  - `dist/`, `MyDLFW_serving/` — Distributed training and model serving prototypes/examples.
 
-## 快速开始
+## Quick Start
 
-- 环境准备
-  - 安装 `python>=3.8` 与 `numpy`。
-  - 可选：使用 CUDA 后端需具备 CUDA 工具链与编译好的后端 `.pyd`（见下文），可选择自主编译或直接导入编译后的 `.pyd` 文件。
+- **Environment Preparation**
+  - Install `python>=3.8` and `numpy`.
+  - Optional: Using the CUDA backend requires the CUDA toolkit and a compiled backend `.pyd` (see below). You can choose to compile it yourself or import the compiled `.pyd` file directly.
 
-- 数据准备
-  - MNIST：将原始 IDX 文件已位于 `Deepflows\data\MNIST\raw`（含 `train-images-idx3-ubyte`、`train-labels-idx1-ubyte`、`t10k-images-idx3-ubyte`、`t10k-labels-idx1-ubyte`）。
-  - CIFAR-10：将 Python 版批次数据已位于 `Deepflows\data\cifar-10-batches-py`（含 `data_batch_1..5`、`test_batch`）。
+- **Data Preparation**
+  - MNIST: Place raw IDX files in `Deepflows\data\MNIST\raw` (including `train-images-idx3-ubyte`, `train-labels-idx1-ubyte`, `t10k-images-idx3-ubyte`, `t10k-labels-idx1-ubyte`).
+  - CIFAR-10: Place Python version batch data in `Deepflows\data\cifar-10-batches-py` (including `data_batch_1..5`, `test_batch`).
 
-- 运行示例脚本 (详细说明请见 [test/scripts_description_cn.md](test/scripts_description_cn.md))
-  - **基础与 MLP**
-    - 线性回归 (CPU)：`python test/LinearRegression.py`
-    - MLP-MNIST (CPU/CUDA)：`python test/MLP_MNIST.py` / `python test/MLP_MNIST_cuda.py`
-  - **CNN (卷积神经网络)**
-    - MNIST (CPU/CUDA)：`python test/CNN_MNIST.py` / `python test/CNN_MNIST_cuda.py`
-    - CIFAR-10 (CPU/CUDA)：`python test/CNN_CIFAR10.py` / `python test/CNN_CIFAR10_cuda.py`
-    - Animal-10 (CUDA)：`python test/CNN_Animal10_cuda.py`
-    - Dishes (CUDA)：`python test/CNN_Dishes_cuda.py`
-  - **高级架构 (ResNet/MobileNet)**
-    - ResNet (Animal-10/CIFAR-10, CUDA)：`python test/ResNet_Animal10_cuda.py`, `python test/ResNet_CIFAR10_cuda.py`
-    - MobileNet 实现：`test/MobileNet.py`
-  - **功能测试**
-    - CUDA 底层测试：`python test/test_cuda.py`
-    - 模型保存加载测试：`python test/CNN_CIFAR10_cuda_model_save_load_test.py`
+- **Run Example Scripts** (For details see [test/scripts_description_en.md](test/scripts_description_en.md))
+  - **Basic & MLP**
+    - Linear Regression (CPU): `python test/LinearRegression.py`
+    - MLP-MNIST (CPU/CUDA): `python test/MLP_MNIST.py` / `python test/MLP_MNIST_cuda.py`
+  - **CNN (Convolutional Neural Networks)**
+    - MNIST (CPU/CUDA): `python test/CNN_MNIST.py` / `python test/CNN_MNIST_cuda.py`
+    - CIFAR-10 (CPU/CUDA): `python test/CNN_CIFAR10.py` / `python test/CNN_CIFAR10_cuda.py`
+    - Animal-10 (CUDA): `python test/CNN_Animal10_cuda.py`
+    - Dishes (CUDA): `python test/CNN_Dishes_cuda.py`
+  - **Advanced Architectures (ResNet/MobileNet)**
+    - ResNet (Animal-10/CIFAR-10, CUDA): `python test/ResNet_Animal10_cuda.py`, `python test/ResNet_CIFAR10_cuda.py`
+    - MobileNet Implementation: `test/MobileNet.py`
+  - **Functional Tests**
+    - CUDA Low-level Test: `python test/test_cuda.py`
+    - Model Save/Load Test: `python test/CNN_CIFAR10_cuda_model_save_load_test.py`
 
-> 注意：CUDA 版脚本会显式使用 `device='cuda'`。若未启用 CUDA 后端，相关脚本将无法运行，请先完成后端编译或导入编译产物。
+> Note: CUDA version scripts explicitly use `device='cuda'`. If the CUDA backend is not enabled, these scripts will fail to run. Please compile the backend or import the compiled product first.
 
-## 核心用法要点
+## Core Usage Points
 
-- 张量与后端：使用 `Tensor(...)` 或直接 `BackendTensor(...)` 创建数据；后端自动桥接 NumPy / 自定义后端。
-- 自动求导：默认开启，通过 `with DeepFlows.no_grad():` 或 `with DeepFlows.enable_grad():` 显式控制（详见 `autograd.py`）。
-- 构建模型：继承 `nn.Module`，实现 `forward`，使用 `model.parameters()` 与优化器配合训练。
+- **Tensor & Backend**: Use `Tensor(...)` or directly `BackendTensor(...)` to create data; the backend automatically bridges NumPy / custom backends.
+- **Autograd**: Enabled by default. Explicitly control via `with DeepFlows.no_grad():` or `with DeepFlows.enable_grad():` (see `autograd.py`).
+- **Build Model**: Inherit from `nn.Module`, implement `forward`, and use `model.parameters()` with an optimizer for training.
 
-## 示例引用代码位置
+## Example Code Locations
 
-- 包导出入口：`DeepFlows/__init__.py`
-- 张量核心：`DeepFlows/tensor.py`
-- 自动求导：`DeepFlows/autograd.py`
-- 后端抽象：`DeepFlows/backend/backend_tensor.py`
-- 示例脚本：`test/` 目录下包含多种网络架构（CNN, ResNet, MobileNet）与数据集（MNIST, CIFAR-10, Animal-10）的训练脚本。详见 [test/scripts_description_cn.md](test/scripts_description_cn.md)。
+- Package Export Entry: `DeepFlows/__init__.py`
+- Tensor Core: `DeepFlows/tensor.py`
+- Autograd: `DeepFlows/autograd.py`
+- Backend Abstraction: `DeepFlows/backend/backend_tensor.py`
+- Example Scripts: The `test/` directory contains training scripts for various network architectures (CNN, ResNet, MobileNet) and datasets (MNIST, CIFAR-10, Animal-10). See [test/scripts_description_en.md](test/scripts_description_en.md).
 
-## 预训练模型与迁移学习
+## Pretrained Models & Transfer Learning
 
-DeepFlows 支持加载常见视觉模型的预训练权重（源自 PyTorch），这为迁移学习提供了基础。相关核心实现位于 `DeepFlows/utils/pretrained_models.py`。
+DeepFlows supports loading pretrained weights from common vision models (sourced from PyTorch), providing a foundation for transfer learning. Core implementation is located in `DeepFlows/utils/pretrained_models.py`.
 
-### 主要功能
-1. **模型支持**: 目前支持 `resnet18`, `resnet50`, `mobilenet_v1`, `vgg16` 等模型。
-2. **权重转换**: 提供了从 PyTorch 权重格式到 DeepFlows 权重格式的自动转换工具。
-3. **自动管理**: 支持自动下载、缓存和加载预训练权重。
+### Key Features
+1. **Model Support**: Currently supports `resnet18`, `resnet50`, `mobilenet_v1`, `vgg16`.
+2. **Weight Conversion**: Provides tools to automatically convert weights from PyTorch format to DeepFlows format.
+3. **Automatic Management**: Supports automatic downloading, caching, and loading of pretrained weights.
 
-### 快速上手
-可以通过以下方式快速创建一个加载了预训练权重的模型：
+### Quick Start
+You can quickly create a model loaded with pretrained weights using:
 
 ```python
 from DeepFlows.utils.pretrained_models import create_model_with_pretrained_weights
 
-# 自动下载(如需)、转换并创建加载好权重的模型
-# 支持的模型名: 'resnet18', 'resnet50', 'mobilenet_v1', 'vgg16'
+# Automatically download (if needed), convert, and create a model with loaded weights
+# Supported model names: 'resnet18', 'resnet50', 'mobilenet_v1', 'vgg16'
 model = create_model_with_pretrained_weights('resnet18')
 ```
 
-或者运行测试脚本体验完整流程：
+Or run the test script to experience the full process:
 ```bash
 python test/test_pretrained_models.py
 ```
 
-该脚本展示了如何列出可用模型、下载权重、转换格式以及加载到模型中的完整过程。
+This script demonstrates how to list available models, download weights, convert formats, and load them into a model.
 
-## 常见问题与假设
+## FAQ & Assumptions
 
-- 假设你已有 Python 与 NumPy。CPU 模式无需额外编译。
-- 使用 GPU 需启用 CUDA 后端：项目会尝试 `from DeepFlows.backend.backend_src.build.Release import CUDA_BACKEND`，若导入失败则视为未启用。
+- Assumes you have Python and NumPy. CPU mode requires no extra compilation.
+- Using GPU requires enabling the CUDA backend: The project tries `from DeepFlows.backend.backend_src.build.Release import CUDA_BACKEND`. If import fails, it is treated as disabled.
 
-## CUDA 后端：编译与导入
+## CUDA Backend: Compilation & Import
 
-- 自主编译（Windows）
-  - 依赖：CUDA 工具链（含 NVCC）、CMake、Visual Studio Build Tools。
-  - 步骤：
-    - 进入 `DeepFlows/backend/backend_src`，使用 CMake 生成 VS 工程，构建 `Release`。
-    - 编译成功后产物位于 `DeepFlows/backend/backend_src/build/Release/CUDA_BACKEND.pyd`。
-    - 该路径与项目的导入语句匹配，无需额外配置。
+- **Self-Compile (Windows)**
+  - Dependencies: CUDA Toolkit (including NVCC), CMake, Visual Studio Build Tools.
+  - Steps:
+    - Enter `DeepFlows/backend/backend_src`, use CMake to generate VS project, build `Release`.
+    - Upon success, the product is located at `DeepFlows/backend/backend_src/build/Release/CUDA_BACKEND.pyd`.
+    - This path matches the project's import statement, no extra config needed.
 
-- 直接导入编译产物 `.pyd`
-  - 将已编译好的 `CUDA_BACKEND.pyd` 放入 `DeepFlows/backend/backend_src/build/Release/`。
-  - Python 将通过 `from DeepFlows.backend.backend_src.build.Release import CUDA_BACKEND` 自动加载。
+- **Directly Import Compiled `.pyd`**
+  - Place the compiled `CUDA_BACKEND.pyd` into `DeepFlows/backend/backend_src/build/Release/`.
+  - Python will automatically load it via `from DeepFlows.backend.backend_src.build.Release import CUDA_BACKEND`.
 
-- 验证后端是否启用
-  - 在 Python REPL 中执行：
+- **Verify Backend Enabled**
+  - Execute in Python REPL:
     - `from DeepFlows.backend.backend_tensor import cuda`
     - `print(cuda().enabled())`
-  - 若输出为 `True`，表示已正确加载 CUDA 后端；否则将回退为未启用状态。
+  - If output is `True`, the CUDA backend is correctly loaded; otherwise, it falls back to disabled status.
 
-## 可视化平台使用指南 (DeepFlows Visualization Platform)
+## DeepFlows Visualization Platform Guide
 
-欢迎使用 DeepFlows 可视化平台！这是一个基于 Vue 3 + FastAPI 的全栈应用，旨在通过直观的 Web 界面展示我们自研深度学习框架 `DeepFlows` 的训练过程与模型构建能力。
+Welcome to the DeepFlows Visualization Platform! This is a full-stack application based on Vue 3 + FastAPI, designed to demonstrate the training process and model building capabilities of our self-developed deep learning framework `DeepFlows` via an intuitive Web interface.
 
-### 🛠️ 环境准备与安装
+### 🛠️ Environment Setup & Installation
 
-#### 1. 基础要求
-- **Python**: 3.10 或更高版本
-- **Node.js**: 16.0 或更高版本 (推荐使用 LTS)
-- **CUDA (可选)**: 如果需要 GPU 加速，请确保已安装 NVIDIA CUDA Toolkit (推荐 11.x 或 12.x)
+#### 1. Basic Requirements
+- **Python**: 3.10 or higher
+- **Node.js**: 16.0 or higher (LTS recommended)
+- **CUDA (Optional)**: If GPU acceleration is needed, ensure NVIDIA CUDA Toolkit is installed (11.x or 12.x recommended).
 
-#### 2. 后端配置 (Visualization_backend)
+#### 2. Backend Configuration (Visualization_backend)
 
-后端负责运行深度学习框架、处理训练任务和通过 WebSocket 推送实时数据。
+The backend is responsible for running the deep learning framework, handling training tasks, and pushing real-time data via WebSockets.
 
-##### 步骤 1: 创建虚拟环境
-建议使用 `venv` 或 `conda` 创建隔离环境，避免污染全局 Python 环境。
+##### Step 1: Create Virtual Environment
+It is recommended to use `venv` or `conda` to create an isolated environment to avoid polluting the global Python environment.
 
 ```powershell
-# 在项目根目录下
+# In project root
 python -m venv venv
-# 激活环境 (Windows)
+# Activate environment (Windows)
 .\venv\Scripts\Activate.ps1
-# 激活环境 (Linux/Mac)
+# Activate environment (Linux/Mac)
 source venv/bin/activate
 ```
 
-##### 步骤 2: 安装依赖
-我们需要安装 FastAPI 服务相关依赖以及监控工具。
+##### Step 2: Install Dependencies
+We need to install FastAPI service dependencies and monitoring tools.
 
 ```bash
 cd Visualization_backend
 pip install fastapi uvicorn[standard] websockets psutil nvidia-ml-py scikit-learn
 ```
 
-> **注意**: 核心框架 `DeepFlows` 依赖于底层的 C++ 编译扩展 (`.pyd` 或 `.so`)。请确保 `DeepFlows/backend/backend_src/build/Release` 目录下已有编译好的文件，或者按照框架文档先行编译。
+> **Note**: The core framework `DeepFlows` depends on the underlying C++ compiled extension (`.pyd` or `.so`). Please ensure that the compiled file exists in the `DeepFlows/backend/backend_src/build/Release` directory, or compile it first according to the framework documentation.
 
-##### 步骤 3: 启动后端服务
+##### Step 3: Start Backend Service
 ```bash
-# 确保在激活的虚拟环境中
+# Ensure you are in the activated virtual environment
 python server.py
 ```
-成功启动后，你会看到：
+After successful startup, you will see:
 - `INFO: Uvicorn running on http://0.0.0.0:8000`
 - `[System] Server starting up...`
 
-#### 3. 前端配置 (Visualization_frontend)
+#### 3. Frontend Configuration (Visualization_frontend)
 
-前端提供可视化交互界面，包括仪表盘、模型构建器和训练配置。
+The frontend provides a visual interactive interface, including dashboards, model builders, and training configurations.
 
-##### 步骤 1: 安装依赖
+##### Step 1: Install Dependencies
 ```bash
 cd Visualization_frontend
 npm install
 ```
 
-##### 步骤 2: 配置环境变量 (可选)
-默认情况下，前端会尝试连接本地 `http://127.0.0.1:8000`。如果需要修改，请编辑 `.env` 文件：
+##### Step 2: Configure Environment Variables (Optional)
+By default, the frontend tries to connect to local `http://127.0.0.1:8000`. To modify, edit the `.env` file:
 ```env
 VITE_API_URL=http://127.0.0.1:8000/api
 VITE_WS_URL=ws://127.0.0.1:8000/ws
 ```
 
-##### 步骤 3: 启动前端开发服务器
+##### Step 3: Start Frontend Dev Server
 ```bash
 npm run dev
 ```
-浏览器访问控制台输出的地址 (通常是 `http://localhost:3000`) 即可进入系统。
+Visit the address output in the console (usually `http://localhost:3000`) to enter the system.
 
-### 🚀 功能使用指南
+### 🚀 Usage Guide
 
-#### 1. 仪表盘 (Dashboard)
-- **实时监控**: 展示当前训练的 Epoch, Batch, Loss 和 Accuracy。
-- **可视化图表**:
-  - **Loss & Accuracy**: 动态折线图，实时绘制训练曲线。
-  - **Resource Usage**: 实时显示本机的 CPU、内存和 GPU (若有) 使用率。
-- **全屏模式**: 点击右上角的全屏图标，获得沉浸式体验。
+#### 1. Dashboard
+- **Real-time Monitoring**: Shows current Epoch, Batch, Loss, and Accuracy.
+- **Visual Charts**:
+  - **Loss & Accuracy**: Dynamic line charts, plotting training curves in real-time.
+  - **Resource Usage**: Real-time display of CPU, Memory, and GPU (if available) usage.
+- **Full Screen Mode**: Click the full-screen icon in the top right for an immersive experience.
 
-#### 2. 模型构建器 (Model Builder)
-这是一个“低代码”模型搭建工具，允许你通过拖拽方式设计神经网络。
+#### 2. Model Builder
+This is a "Low-Code" model building tool allowing you to design neural networks via drag-and-drop.
 
-- **添加层**: 从左侧面板拖拽 `Conv2d`, `Linear`, `ReLU` 等层到中间画布。
-- **编辑参数**:
-  - 点击层卡片上的 **编辑图标** (✏️)。
-  - 在弹出的 JSON 编辑框中修改参数（例如修改 `in_features`, `out_features`）。
-  - **重要**: 请确保层与层之间的维度匹配（例如上一层输出 128，下一层输入必须是 128）。
-- **删除层**: 鼠标悬停在层上，点击 **删除图标** (🗑️)。
-- **保存模型**:
-  - 点击右侧的 **Save Model**。
-  - 输入自定义模型名称（如 "My MLP v1"）。
-  - 保存成功后会自动跳转到配置页面。
+- **Add Layer**: Drag `Conv2d`, `Linear`, `ReLU`, etc., from the left panel to the center canvas.
+- **Edit Parameters**:
+  - Click the **Edit Icon** (✏️) on the layer card.
+  - Modify parameters in the JSON editor popup (e.g., change `in_features`, `out_features`).
+  - **Important**: Ensure dimensions match between layers (e.g., if previous layer outputs 128, next layer input must be 128).
+- **Delete Layer**: Hover over a layer and click the **Delete Icon** (🗑️).
+- **Save Model**:
+  - Click **Save Model** on the right.
+  - Enter a custom model name (e.g., "My MLP v1").
+  - Automatically jumps to the configuration page upon success.
 
-#### 3. 训练配置 (Training Config)
-在这里配置训练超参数并启动任务。
+#### 3. Training Config
+Configure training hyperparameters and start tasks here.
 
 - **Model Selection**:
-  - **Default MNIST_CNN**: 系统内置的卷积神经网络。
-  - **自定义模型**: 下拉选择你在 Model Builder 中保存的模型。
-- **Dataset**: 目前支持 `MNIST` (真实数据)。`CIFAR-10` 选项暂时也会回退到 MNIST（因输入通道兼容性原因）。
+  - **Default MNIST_CNN**: System built-in CNN.
+  - **Custom Models**: Select models you saved in Model Builder from the dropdown.
+- **Dataset**: Currently supports `MNIST` (Real data). `CIFAR-10` option will temporarily fallback to MNIST (due to input channel compatibility reasons).
 - **Hyperparameters**:
-  - **Batch Size**: 批次大小 (推荐 32 或 64)。
-  - **Epochs**: 训练轮数。
-  - **Learning Rate**: 学习率 (推荐 0.001 - 0.01)。
-  - **Optimizer**: 支持 `SGD`, `Adam`, `Adagrad`。
-- **控制**:
-  - **Start Training**: 发送配置到后端，开始训练。
-  - **Stop Training**: 强制停止当前训练任务。
+  - **Batch Size**: Batch size (recommended 32 or 64).
+  - **Epochs**: Training epochs.
+  - **Learning Rate**: Learning rate (recommended 0.001 - 0.01).
+  - **Optimizer**: Supports `SGD`, `Adam`, `Adagrad`.
+- **Controls**:
+  - **Start Training**: Send config to backend and start training.
+  - **Stop Training**: Force stop the current training task.
 
-### 🧩 可视化平台常见问题 (FAQ)
+### 🧩 Visualization Platform FAQ
 
-**Q: 为什么 Resource Usage 图表中 GPU 显示为 0？**
-A: 请检查是否安装了 `nvidia-ml-py` 依赖，以及本机是否拥有 NVIDIA 显卡并正确安装了驱动。如果没有 GPU，后端会自动忽略并显示 0。
+**Q: Why does the GPU show 0 in Resource Usage?**
+A: Check if `nvidia-ml-py` dependency is installed, and if the machine has an NVIDIA GPU with drivers correctly installed. If no GPU, the backend automatically ignores it and displays 0.
 
-**Q: 自定义模型报错 "Shape mismatch"？**
-A: 这是深度学习中最常见的问题。请仔细检查 Model Builder 中每一层的参数，特别是 `Linear` 层的输入输出维度。对于 MNIST，输入图片大小为 28x28，`Flatten` 后是 784。
+**Q: Custom model reports "Shape mismatch"?**
+A: This is the most common issue in deep learning. Carefully check the parameters of each layer in the Model Builder, especially input/output dimensions of `Linear` layers. For MNIST, input image size is 28x28, which is 784 after `Flatten`.
 
-**Q: 页面提示 "Network Error"？**
-A: 请检查后端 `server.py` 是否正在运行，且端口 `8000` 未被防火墙拦截。
+**Q: Page says "Network Error"?**
+A: Check if the backend `server.py` is running and port `8000` is not blocked by a firewall.
 
-## 贡献者
+## Contributors
 
 <a href="https://github.com/Ch0ser">
   <img src="https://github.com/Ch0ser.png" width="60px;" alt="Ch0ser"/>
@@ -248,7 +248,6 @@ A: 请检查后端 `server.py` 是否正在运行，且端口 `8000` 未被防�
     <img src="https://github.com/feudalDragon.png" width="60px;" alt="feudalDragon"/>
   </a>
 
-## 贡献与联系
+## Contribution and Contact
 
-欢迎提 Issue / PR。你可以先从修复文档、补充测试用例或完善后端实现开始。
-
+Welcome to submit Issues / PRs. You can start by fixing documentation, adding test cases, or improving backend implementation.
