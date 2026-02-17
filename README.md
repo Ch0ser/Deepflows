@@ -4,7 +4,7 @@
   <p>DeepFlows is a lightweight deep learning framework for teaching and experimentation. It includes tensor encapsulation, automatic differentiation, backend abstraction, common neural network modules and optimizers, as well as some example training scripts and service modules.</p>
 
   <p>
-    <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
+    <img src="https://img.shields.io/badge/license-MIT-orange" alt="License">
     <img src="https://img.shields.io/badge/python-3.8+-blue" alt="Python Version">
     <img src="https://img.shields.io/badge/contributors-6-green" alt="Contributors">
   </p>
