@@ -1,8 +1,10 @@
-# <img src="DeepFlows_logo_light.png" height="112" align="center" /> DeepFlows
+<div align="center">
+  <img src="DeepFlows_logo_light.png" height="252" />
+  <h1>DeepFlows</h1>
+  <p>DeepFlows is a lightweight deep learning framework for teaching and experimentation. It includes tensor encapsulation, automatic differentiation, backend abstraction, common neural network modules and optimizers, as well as some example training scripts and service modules.</p>
+</div>
 
 [**简体中文**](README_cn.md) | [**English**](README.md)
-
-DeepFlows is a lightweight deep learning framework for teaching and experimentation. It includes tensor encapsulation, automatic differentiation, backend abstraction, common neural network modules and optimizers, as well as some example training scripts and service modules.
 
 ## Directory Structure (Brief)
 
