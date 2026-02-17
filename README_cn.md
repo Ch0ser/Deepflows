@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="DeepFlows_logo_light_withname.png" height="252" />
+  <img src="DeepFlows_logo_light_withname.png" height="504" />
   <h1>DeepFlows</h1>
   <p>DeepFlows 是一个轻量级的深度学习框架教学/实验项目，包含张量封装、自动求导、后端抽象、常用神经网络模块与优化器，以及一些示例训练脚本与服务模块。</p>
 
   <p>
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
-    <img src="https://img.shields.io/github/contributors/Ch0ser/Deepflows" alt="Contributors">
-    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-yellow" alt="Buy Me a Coffee">
+    <img src="https://img.shields.io/badge/python-3.8+-blue" alt="Python Version">
+    <img src="https://img.shields.io/badge/contributors-6-green" alt="Contributors">
   </p>
 
   [**English**](README.md) | [**简体中文**](README_cn.md)
