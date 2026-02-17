@@ -1,4 +1,4 @@
-# <img src="DeepFlows_logo.png" height="45" align="center" /> DeepFlows
+# <img src="DeepFlows_logo_light.png" height="56" align="center" /> DeepFlows
 
 [**简体中文**](README_cn.md) | [**English**](README.md)
 
