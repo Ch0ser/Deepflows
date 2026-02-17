@@ -259,3 +259,7 @@ A: Check if the backend `server.py` is running and port `8000` is not blocked by
 ## Contribution and Contact
 
 Welcome to submit Issues / PRs. You can start by fixing documentation, adding test cases, or improving backend implementation.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Ch0ser/Deepflows&type=Date)](https://star-history.com/#Ch0ser/Deepflows&Date)

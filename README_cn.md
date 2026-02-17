@@ -260,3 +260,7 @@ A: 请检查后端 `server.py` 是否正在运行，且端口 `8000` 未被防�
 
 欢迎提 Issue / PR。你可以先从修复文档、补充测试用例或完善后端实现开始。
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Ch0ser/Deepflows&type=Date)](https://star-history.com/#Ch0ser/Deepflows&Date)
+
