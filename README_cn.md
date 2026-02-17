@@ -1,7 +1,7 @@
 <div align="center">
   <img src="DeepFlows_logo_light_withname.png" height="504" />
   <h1>DeepFlows</h1>
-  <p>DeepFlows 是一个轻量级的深度学习框架教学/实验项目，包含张量封装、自动求导、后端抽象、常用神经网络模块与优化器，以及一些示例训练脚本与服务模块。</p>
+  <p><b>DeepFlows 是一个轻量级的深度学习框架教学/实验项目，包含张量封装、自动求导、后端抽象、常用神经网络模块与优化器，以及一些示例训练脚本与服务模块。</b></p>
 
   <p>
     <img src="https://img.shields.io/badge/license-MIT-orange" alt="License">
